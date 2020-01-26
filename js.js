@@ -8,5 +8,6 @@ var shopGoods3 = prompt('Какой тип товаров будем прода�
 	name : name,
 	shopGoods : [shopGoods1, shopGoods2, shopGoods3],
 	employers : {},
+	open : false,
 }
 alert('бюждет на 1 день составит ' + budget/30 + " " + 'dollars');# Daniil
