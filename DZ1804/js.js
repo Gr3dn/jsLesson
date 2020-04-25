@@ -88,19 +88,3 @@ tovar1.forEach (function (item, i, shopGoods){
 	 console.log("У нас вы можете купить: " + i + ' ' + item);
 });
 alert('Ваш дневной бюджет на день: ' + mainList.budget / 30);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(first);*/
