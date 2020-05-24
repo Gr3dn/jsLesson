@@ -31,14 +31,14 @@ open_btn.addEventListener('click', () => {
 
 goods_item_btn.addEventListener('click', () => {
 	for (let i = 0; i < goods_item.length; i++ ){
-					let a = goods_item[i].value;
-						if ( a != null && a != ''){
-							 console.log('good');
-							 mainList.shopGoods[i] = a;
-							 tovar1[i] = a;
-							 produkt[i] = a; 
-						}; 
-				};
+		let a = goods_item[i].value;
+		if ( a != null && a != ''){
+			console.log('good');
+			mainList.shopGoods[i] = a;
+			tovar1[i] = a;
+			produkt[i] = a; 
+		}; 
+	};
 	goods_value.textContent = mainList.shopGoods;
 });
 
@@ -48,7 +48,6 @@ var ask = false;
 discountA.addEventListener('click', discountAsk);
 	function discountAsk(){
 		ask = prompt('Будут ли скидки?      true - Да, false - нет' ,'false');
-
 		if(ask === 'true'){
 			ask = true;
 			discount_value.style.backgroundColor = "lime";
@@ -60,11 +59,11 @@ discountA.addEventListener('click', discountAsk);
 
 hire_employers_btn.addEventListener('click', () => {
 	for (let i = 0; i < hire_employers_item.length; i++ ){
-					let a = hire_employers_item[i].value;
-						if ( a != null && a != ''){
-							 mainList.employers[i] = a;
-						}; 
-				};
+		let a = hire_employers_item[i].value;
+			if ( a != null && a != ''){
+				mainList.employers[i] = a;
+			}; 
+	};
 	employers_value.textContent = mainList.employers;
 });
 
@@ -108,8 +107,6 @@ choose_item.addEventListener('change', () => {
 	}
 	
 });
-
-
 
 var tovar1 = [],
 	produkt = {},
